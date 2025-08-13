@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawmill Tactical Training Complex</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="calendar.css" rel="stylesheet">
+</head>
+<body class="tactical-theme">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-text">THE SAWMILL</span>
+                <span class="brand-subtext">TACTICAL TRAINING COMPLEX</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">COURSES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#calendar">SCHEDULE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#training-paths">TRAINING PATHS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#instructors">INSTRUCTORS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">FACILITIES</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-danger ms-3" href="#training-paths">MEMBERSHIP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12 text-white text-center">
+                    <h1 class="display-3 fw-bold mb-4">ELITE TACTICAL TRAINING</h1>
+                    <p class="lead mb-4">Professional firearms and tactical training by experienced military and law enforcement instructors</p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="#courses" class="btn btn-danger btn-lg">VIEW COURSES</a>
+                        <a href="#calendar" class="btn btn-outline-light btn-lg">TRAINING CALENDAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">FEATURED COURSES</h2>
+            <div class="row g-4">
+                <!-- Course Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1595590424283-b8f17842773f')">
+                            <span class="badge bg-danger">POPULAR</span>
+                            <div class="course-overlay">
+                                <span class="difficulty">Level: Beginner</span>
+                                <span class="duration">Duration: 2 Days</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Basic Rifle</h3>
+                            <p class="price">$100.00</p>
+                            <p class="description">Comprehensive introduction to rifle handling and marksmanship</p>
+                            <div class="equipment-list">
+                                <h4>Required Equipment:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> AR-15 or Similar Platform</li>
+                                    <li><i class="fas fa-check"></i> 200 Rounds of Ammunition</li>
+                                    <li><i class="fas fa-check"></i> 3 Magazines</li>
+                                    <li><i class="fas fa-check"></i> Eye & Ear Protection</li>
+                                </ul>
+                                <p class="equipment-note">* Equipment rental available</p>
+                            </div>
+                            <button class="btn btn-outline-danger w-100 mt-3" data-bs-toggle="modal" data-bs-target="#registrationModal">REGISTER NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1595590424283-b8f17842773f')">
+                            <div class="course-overlay">
+                                <span class="difficulty">Level: Intermediate</span>
+                                <span class="duration">Duration: 3 Days</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Tactical Pistol</h3>
+                            <p class="price">$200.00</p>
+                            <p class="description">Advanced handgun techniques and tactical applications</p>
+                            <div class="equipment-list">
+                                <h4>Required Equipment:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Semi-Auto Pistol 9mm or Larger</li>
+                                    <li><i class="fas fa-check"></i> 300 Rounds of Ammunition</li>
+                                    <li><i class="fas fa-check"></i> 3 Magazines</li>
+                                    <li><i class="fas fa-check"></i> Holster & Mag Pouches</li>
+                                    <li><i class="fas fa-check"></i> Eye & Ear Protection</li>
+                                </ul>
+                                <p class="equipment-note">* Equipment rental available</p>
+                            </div>
+                            <button class="btn btn-outline-danger w-100 mt-3" data-bs-toggle="modal" data-bs-target="#registrationModal">REGISTER NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1595590424283-b8f17842773f')">
+                            <div class="course-overlay">
+                                <span class="difficulty">Level: Advanced</span>
+                                <span class="duration">Duration: 2 Days</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Advanced Concealed Carry</h3>
+                            <p class="price">$150.00</p>
+                            <p class="description">Expert-level concealed carry tactics and training</p>
+                            <div class="equipment-list">
+                                <h4>Required Equipment:</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Concealed Carry Pistol</li>
+                                    <li><i class="fas fa-check"></i> 250 Rounds of Ammunition</li>
+                                    <li><i class="fas fa-check"></i> 3 Magazines</li>
+                                    <li><i class="fas fa-check"></i> IWB/OWB Holster</li>
+                                    <li><i class="fas fa-check"></i> Concealment Garment</li>
+                                    <li><i class="fas fa-check"></i> Eye & Ear Protection</li>
+                                </ul>
+                                <p class="equipment-note">* Some equipment available for rental</p>
+                            </div>
+                            <button class="btn btn-outline-danger w-100 mt-3" data-bs-toggle="modal" data-bs-target="#registrationModal">REGISTER NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="py-5 bg-tactical">
+        <div class="container">
+            <!-- Header Image -->
+            <div class="training-events-header mb-5 position-relative">
+                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Tactical Training Exercise" class="img-fluid rounded">
+                <div class="header-overlay">
+                    <h2 class="section-title text-center mb-0">UPCOMING TRAINING EVENTS</h2>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+            
+            <!-- Month Navigation -->
+            <div class="month-navigation mb-4">
+                <button class="btn btn-outline-danger" data-month="january">JANUARY</button>
+                <button class="btn btn-outline-danger" data-month="february">FEBRUARY</button>
+                <button class="btn btn-outline-danger" data-month="march">MARCH</button>
+                <button class="btn btn-outline-danger" data-month="april">APRIL</button>
+                <button class="btn btn-outline-danger" data-month="may">MAY</button>
+                <button class="btn btn-outline-danger" data-month="june">JUNE</button>
+                <button class="btn btn-outline-danger" data-month="july">JULY</button>
+                <button class="btn btn-outline-danger" data-month="august">AUGUST</button>
+                <button class="btn btn-outline-danger" data-month="september">SEPTEMBER</button>
+                <button class="btn btn-outline-danger" data-month="october">OCTOBER</button>
+                <button class="btn btn-outline-danger" data-month="november">NOVEMBER</button>
+                <button class="btn btn-outline-danger" data-month="december">DECEMBER</button>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- Events Timeline -->
+            <div class="events-timeline">
+                <!-- January Events -->
+                <div class="timeline-month" id="january-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">JAN</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Winter Tactical Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Winter Tactical Operations</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Mike</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 10 Spots Left</span>
+                                </div>
+                                <p>Cold weather tactical training and operations.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">January 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="available">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                                <div class="unavailable">31</div>
+                                <div class="next-month">1</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- February Events -->
+                <div class="timeline-month" id="february-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">10</span>
+                                <span class="month">FEB</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Advanced Pistol Course">
+                            </div>
+                            <div class="event-content">
+                                <h3>Advanced Pistol Course</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Sarah</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 8 Spots Left</span>
+                                </div>
+                                <p>Advanced handgun techniques and tactical applications.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">February 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">26</div>
+                                <div class="prev-month">27</div>
+                                <div class="prev-month">28</div>
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="available">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="next-month">1</div>
+                                <div class="next-month">2</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- March Events -->
+                <div class="timeline-month" id="march-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event featured">
+                            <div class="event-date">
+                                <span class="day">20</span>
+                                <span class="month">MAR</span>
+                                <span class="badge">SPECIAL</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Spring Training Camp">
+                            </div>
+                            <div class="event-content">
+                                <h3>Spring Training Camp</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Multiple Instructors</span>
+                                    <span><i class="fas fa-clock"></i> 3-Day Course</span>
+                                    <span><i class="fas fa-users"></i> 12 Spots Left</span>
+                                </div>
+                                <p>Comprehensive spring tactical training camp covering multiple disciplines.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">March 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">23</div>
+                                <div class="prev-month">24</div>
+                                <div class="prev-month">25</div>
+                                <div class="prev-month">26</div>
+                                <div class="prev-month">27</div>
+                                <div class="prev-month">28</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="available">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                                <div class="unavailable">31</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- April Events -->
+                <div class="timeline-month" id="april-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">05</span>
+                                <span class="month">APR</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Urban Combat Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Urban Combat Training</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Dutch</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 10 Spots Left</span>
+                                </div>
+                                <p>Advanced urban combat tactics and CQB operations.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">April 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="unavailable">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="available">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="unavailable">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="available">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="available">24</div>
+                                <div class="available">25</div>
+                                <div class="unavailable">26</div>
+                                <div class="unavailable">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- May Events -->
+                <div class="timeline-month" id="may-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">12</span>
+                                <span class="month">MAY</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Long Distance Shooting">
+                            </div>
+                            <div class="event-content">
+                                <h3>Long Distance Shooting</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Sarah</span>
+                                    <span><i class="fas fa-clock"></i> 08:00 - 16:00</span>
+                                    <span><i class="fas fa-users"></i> 8 Spots Left</span>
+                                </div>
+                                <p>Precision shooting and advanced marksmanship training.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">May 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">27</div>
+                                <div class="prev-month">28</div>
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="available">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                                <div class="unavailable">31</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- June Events -->
+                <div class="timeline-month" id="june-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event featured">
+                            <div class="event-date">
+                                <span class="day">18</span>
+                                <span class="month">JUN</span>
+                                <span class="badge">NEW</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Tactical Medical Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Tactical Medical Training</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Tom</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 12 Spots Left</span>
+                                </div>
+                                <p>Combat medical care and tactical emergency response.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">June 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">25</div>
+                                <div class="prev-month">26</div>
+                                <div class="prev-month">27</div>
+                                <div class="prev-month">28</div>
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="available">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- July Events -->
+                <div class="timeline-month" id="july-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">25</span>
+                                <span class="month">JUL</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Summer Night Operations">
+                            </div>
+                            <div class="event-content">
+                                <h3>Summer Night Operations</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Mike</span>
+                                    <span><i class="fas fa-clock"></i> 20:00 - 04:00</span>
+                                    <span><i class="fas fa-users"></i> 10 Spots Left</span>
+                                </div>
+                                <p>Advanced night vision and thermal operations training.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">July 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="unavailable">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                                <div class="unavailable">31</div>
+                                <div class="next-month">1</div>
+                                <div class="next-month">2</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- August Events -->
+                <div class="timeline-month" id="august-events">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">02</span>
+                                <span class="month">AUG</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Active Threat Response Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Active Threat Response</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Tom</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 12 Spots Left</span>
+                                </div>
+                                <p>Advanced tactical response training for active threat scenarios.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="timeline-event featured">
+                            <div class="event-date">
+                                <span class="day">06</span>
+                                <span class="month">AUG</span>
+                                <span class="badge">FREE</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Military/LEO Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Military/LEO Training Day</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Dutch</span>
+                                    <span><i class="fas fa-clock"></i> 08:00 - 16:00</span>
+                                    <span><i class="fas fa-users"></i> 8 Spots Left</span>
+                                </div>
+                                <p>Exclusive training day for military and law enforcement personnel.</p>
+                                <button class="btn btn-danger btn-sm">RESERVE SPOT</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">AUG</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Advanced Carbine Course">
+                            </div>
+                            <div class="event-content">
+                                <h3>Advanced Carbine Course</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Mike</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 6 Spots Left</span>
+                                </div>
+                                <p>Advanced rifle manipulation and tactical applications.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">August 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="unavailable">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="available">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                                <div class="unavailable">31</div>
+                                <div class="next-month">1</div>
+                                <div class="next-month">2</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- September Events (Initially Hidden) -->
+                <div class="timeline-month" id="september-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event featured">
+                            <div class="event-date">
+                                <span class="day">04</span>
+                                <span class="month">SEP</span>
+                                <span class="badge">NEW</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Advanced Night Operations">
+                            </div>
+                            <div class="event-content">
+                                <h3>Advanced Night Operations</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Mike</span>
+                                    <span><i class="fas fa-clock"></i> 18:00 - 02:00</span>
+                                    <span><i class="fas fa-users"></i> 8 Spots Left</span>
+                                </div>
+                                <p>Advanced low-light and night vision tactical training operations.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">12</span>
+                                <span class="month">SEP</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Tactical Shotgun Course">
+                            </div>
+                            <div class="event-content">
+                                <h3>Tactical Shotgun Course</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Dutch</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 10 Spots Left</span>
+                                </div>
+                                <p>Comprehensive tactical shotgun employment and manipulation.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">25</span>
+                                <span class="month">SEP</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Vehicle CQB Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Vehicle CQB</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Tom</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 6 Spots Left</span>
+                                </div>
+                                <p>Advanced vehicle-based close quarters battle tactics and techniques.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">September 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">26</div>
+                                <div class="prev-month">27</div>
+                                <div class="prev-month">28</div>
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="unavailable">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3><i class="fas fa-calendar-check"></i> Open Range Days</h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">27</div>
+                                <div class="prev-month">28</div>
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="unavailable">1</div>
+                                <div class="available">2</div>
+                                <div class="unavailable">3</div>
+                                <div class="available">4</div>
+                                <div class="unavailable">5</div>
+                                <div class="available">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="unavailable">9</div>
+                                <div class="available">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="unavailable">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="unavailable">21</div>
+                                <div class="available">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="available">25</div>
+                                <div class="unavailable">26</div>
+                                <div class="unavailable">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="available">30</div>
+                                <div class="next-month">1</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- October Events (Initially Hidden) -->
+                <div class="timeline-month" id="october-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">07</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Long Range Precision Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Long Range Precision</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Sarah</span>
+                                    <span><i class="fas fa-clock"></i> 08:00 - 16:00</span>
+                                    <span><i class="fas fa-users"></i> 8 Spots Left</span>
+                                </div>
+                                <p>Advanced long-range marksmanship and ballistics training.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="timeline-event featured">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">OCT</span>
+                                <span class="badge">SPECIAL</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Multi-Day Tactical Operations">
+                            </div>
+                            <div class="event-content">
+                                <h3>Multi-Day Tactical Operations</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Multiple Instructors</span>
+                                    <span><i class="fas fa-clock"></i> 3-Day Course</span>
+                                    <span><i class="fas fa-users"></i> 15 Spots Left</span>
+                                </div>
+                                <p>Comprehensive 3-day tactical training covering CQB, vehicle ops, and night operations.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">28</span>
+                                <span class="month">OCT</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Executive Protection Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Executive Protection</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Mike</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 10 Spots Left</span>
+                                </div>
+                                <p>Professional executive protection and close protection operations.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">October 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">28</div>
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="unavailable">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                                <div class="unavailable">31</div>
+                                <div class="next-month">3</div>
+                                <div class="next-month">4</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- November Events -->
+                <div class="timeline-month" id="november-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event">
+                            <div class="event-date">
+                                <span class="day">08</span>
+                                <span class="month">NOV</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Advanced Rifle Dynamics">
+                            </div>
+                            <div class="event-content">
+                                <h3>Advanced Rifle Dynamics</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Instructor: Dutch</span>
+                                    <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                                    <span><i class="fas fa-users"></i> 8 Spots Left</span>
+                                </div>
+                                <p>Advanced rifle manipulation and tactical shooting techniques.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">November 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">26</div>
+                                <div class="prev-month">27</div>
+                                <div class="prev-month">28</div>
+                                <div class="prev-month">29</div>
+                                <div class="prev-month">30</div>
+                                <div class="prev-month">31</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="unavailable">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="unavailable">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- December Events -->
+                <div class="timeline-month" id="december-events" style="display: none;">
+                    <div class="timeline-grid">
+                        <!-- Event 1 -->
+                        <div class="timeline-event featured">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">DEC</span>
+                                <span class="badge">SPECIAL</span>
+                            </div>
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Winter Warfare Training">
+                            </div>
+                            <div class="event-content">
+                                <h3>Winter Warfare Training</h3>
+                                <div class="event-details">
+                                    <span><i class="fas fa-user"></i> Multiple Instructors</span>
+                                    <span><i class="fas fa-clock"></i> 2-Day Course</span>
+                                    <span><i class="fas fa-users"></i> 10 Spots Left</span>
+                                </div>
+                                <p>Cold weather tactical operations and survival training.</p>
+                                <button class="btn btn-danger btn-sm">REGISTER NOW</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <!-- Open Range Days -->
+                    <div class="open-range-schedule">
+                        <h3>
+                            <div class="left-section">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="month-year">December 2025</span>
+                            </div>
+                            <div class="title">Open Range Days</div>
+                        </h3>
+                        <div class="month-calendar">
+                            <div class="calendar-header">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="prev-month">30</div>
+                                <div class="available">1</div>
+                                <div class="unavailable">2</div>
+                                <div class="available">3</div>
+                                <div class="unavailable">4</div>
+                                <div class="available">5</div>
+                                <div class="unavailable">6</div>
+                                <div class="unavailable">7</div>
+                                <div class="unavailable">8</div>
+                                <div class="available">9</div>
+                                <div class="unavailable">10</div>
+                                <div class="available">11</div>
+                                <div class="unavailable">12</div>
+                                <div class="unavailable">13</div>
+                                <div class="unavailable">14</div>
+                                <div class="unavailable">15</div>
+                                <div class="unavailable">16</div>
+                                <div class="unavailable">17</div>
+                                <div class="unavailable">18</div>
+                                <div class="available">19</div>
+                                <div class="unavailable">20</div>
+                                <div class="available">21</div>
+                                <div class="unavailable">22</div>
+                                <div class="available">23</div>
+                                <div class="unavailable">24</div>
+                                <div class="unavailable">25</div>
+                                <div class="available">26</div>
+                                <div class="available">27</div>
+                                <div class="unavailable">28</div>
+                                <div class="unavailable">29</div>
+                                <div class="unavailable">30</div>
+                                <div class="unavailable">31</div>
+                            </div>
+                        </div>
+                        <div class="range-legend">
+                            <span><i class="fas fa-circle available"></i> Available</span>
+                            <span><i class="fas fa-circle unavailable"></i> Unavailable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Divider 1 -->
+    <div class="parallax-divider parallax-1">
+        <div class="parallax-content">
+            <h2>TRAIN LIKE YOUR LIFE DEPENDS ON IT</h2>
+            <p>Because someday, it might.</p>
+        </div>
+    </div>
+
+    <!-- Training Paths Section -->
+    <section id="training-paths" class="py-5 bg-tactical">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">TRAINING PATHS</h2>
+            <div class="row g-4">
+                <!-- Civilian Path -->
+                <div class="col-lg-4">
+                    <div class="path-card">
+                        <div class="path-header">
+                            <i class="fas fa-user-shield fa-3x mb-3"></i>
+                            <h3>CIVILIAN DEFENSE</h3>
+                        </div>
+                        <div class="path-content">
+                            <div class="level">
+                                <h4>Level 1 - Foundation</h4>
+                                <ul>
+                                    <li>Basic Firearms Safety</li>
+                                    <li>Concealed Carry Basics</li>
+                                    <li>Home Defense Fundamentals</li>
+                                </ul>
+                            </div>
+                            <div class="level">
+                                <h4>Level 2 - Advanced</h4>
+                                <ul>
+                                    <li>Advanced Concealed Carry</li>
+                                    <li>Defensive Shooting Tactics</li>
+                                    <li>Situational Awareness</li>
+                                </ul>
+                            </div>
+                            <div class="level">
+                                <h4>Level 3 - Expert</h4>
+                                <ul>
+                                    <li>Advanced Self-Defense</li>
+                                    <li>Crisis Response</li>
+                                    <li>Low Light Operations</li>
+                                </ul>
+                            </div>
+                            <a href="#courses" class="btn btn-danger mt-4 w-100">START THIS PATH</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Law Enforcement Path -->
+                <div class="col-lg-4">
+                    <div class="path-card">
+                        <div class="path-header">
+                            <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                            <h3>LAW ENFORCEMENT</h3>
+                        </div>
+                        <div class="path-content">
+                            <div class="level">
+                                <h4>Level 1 - Tactical Basics</h4>
+                                <ul>
+                                    <li>Advanced Firearms Handling</li>
+                                    <li>Tactical Movement</li>
+                                    <li>Close Quarters Combat</li>
+                                </ul>
+                            </div>
+                            <div class="level">
+                                <h4>Level 2 - Advanced Operations</h4>
+                                <ul>
+                                    <li>Building Clearing</li>
+                                    <li>Vehicle Tactics</li>
+                                    <li>Force-on-Force Training</li>
+                                </ul>
+                            </div>
+                            <div class="level">
+                                <h4>Level 3 - Special Operations</h4>
+                                <ul>
+                                    <li>Advanced CQB</li>
+                                    <li>Tactical Team Operations</li>
+                                    <li>Crisis Response</li>
+                                </ul>
+                            </div>
+                            <a href="#courses" class="btn btn-danger mt-4 w-100">START THIS PATH</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Military Path -->
+                <div class="col-lg-4">
+                    <div class="path-card">
+                        <div class="path-header">
+                            <i class="fas fa-medal fa-3x mb-3"></i>
+                            <h3>MILITARY TRAINING</h3>
+                        </div>
+                        <div class="path-content">
+                            <div class="level">
+                                <h4>Level 1 - Combat Fundamentals</h4>
+                                <ul>
+                                    <li>Advanced Weapons Systems</li>
+                                    <li>Combat Tactics</li>
+                                    <li>Team Coordination</li>
+                                </ul>
+                            </div>
+                            <div class="level">
+                                <h4>Level 2 - Special Operations</h4>
+                                <ul>
+                                    <li>Advanced Combat Tactics</li>
+                                    <li>Night Operations</li>
+                                    <li>Urban Warfare</li>
+                                </ul>
+                            </div>
+                            <div class="level">
+                                <h4>Level 3 - Elite Training</h4>
+                                <ul>
+                                    <li>Advanced Urban Combat</li>
+                                    <li>Counter-Terror Operations</li>
+                                    <li>Mission Planning</li>
+                                </ul>
+                            </div>
+                            <a href="#courses" class="btn btn-danger mt-4 w-100">START THIS PATH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Divider 2 -->
+    <div class="parallax-divider parallax-2">
+        <div class="parallax-content">
+            <h2>LEARN FROM THE BEST</h2>
+            <p>Elite instructors with real-world experience</p>
+        </div>
+    </div>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">ELITE INSTRUCTORS</h2>
+            <div class="row g-4">
+                <!-- Instructor Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="John Davidson">
+                        </div>
+                        <div class="instructor-content">
+                            <h3>John Davidson</h3>
+                            <p class="designation">Lead Tactical Instructor</p>
+                            <ul class="credentials">
+                                <li>20+ Years Special Forces Experience</li>
+                                <li>Former SWAT Team Leader</li>
+                                <li>Advanced CQB Specialist</li>
+                                <li>Certified Firearms Instructor</li>
+                            </ul>
+                            <div class="certifications">
+                                <span class="badge bg-danger">NRA Certified</span>
+                                <span class="badge bg-danger">SWAT Certified</span>
+                                <span class="badge bg-danger">FBI Tactical Instructor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sarah Martinez">
+                        </div>
+                        <div class="instructor-content">
+                            <h3>Sarah Martinez</h3>
+                            <p class="designation">Advanced Firearms Instructor</p>
+                            <ul class="credentials">
+                                <li>15+ Years Law Enforcement Experience</li>
+                                <li>Specialized in Close Protection</li>
+                                <li>Advanced Firearms Training Expert</li>
+                                <li>Crisis Response Specialist</li>
+                            </ul>
+                            <div class="certifications">
+                                <span class="badge bg-danger">NRA Certified</span>
+                                <span class="badge bg-danger">Advanced Tactical Trainer</span>
+                                <span class="badge bg-danger">Crisis Response Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mike Thompson">
+                        </div>
+                        <div class="instructor-content">
+                            <h3>Mike Thompson</h3>
+                            <p class="designation">Tactical Operations Specialist</p>
+                            <ul class="credentials">
+                                <li>18+ Years Military Experience</li>
+                                <li>Counter-Terrorism Expert</li>
+                                <li>Advanced Combat Medic</li>
+                                <li>Survival Training Specialist</li>
+                            </ul>
+                            <div class="certifications">
+                                <span class="badge bg-danger">Combat Medic Certified</span>
+                                <span class="badge bg-danger">Counter-Terror Specialist</span>
+                                <span class="badge bg-danger">Survival Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 bg-tactical">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">CERTIFICATIONS & CREDENTIALS</h2>
+            <div class="row g-4">
+                <!-- Industry Certifications -->
+                <div class="col-lg-6">
+                    <div class="cert-group">
+                        <h3><i class="fas fa-certificate"></i> Industry Certifications</h3>
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>NRA Training Facility</h4>
+                                    <p>Certified by the National Rifle Association for firearms training excellence</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>USCCA Certified</h4>
+                                    <p>United States Concealed Carry Association approved training center</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>IALEFI Member</h4>
+                                    <p>International Association of Law Enforcement Firearms Instructors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Training Standards -->
+                <div class="col-lg-6">
+                    <div class="cert-group">
+                        <h3><i class="fas fa-check-circle"></i> Training Standards</h3>
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>POST Certified</h4>
+                                    <p>Peace Officer Standards and Training approved facility</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>Military Training Provider</h4>
+                                    <p>Approved for military unit and personnel training</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>State Licensed</h4>
+                                    <p>Licensed and approved by state authorities for firearms training</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Credentials -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="credentials-banner">
+                        <div class="credentials-content">
+                            <h3>ADDITIONAL CREDENTIALS</h3>
+                            <div class="credentials-grid">
+                                <span><i class="fas fa-check"></i> FBI Firearms Instructor Development</span>
+                                <span><i class="fas fa-check"></i> Special Operations Training</span>
+                                <span><i class="fas fa-check"></i> Advanced Tactical Instructor</span>
+                                <span><i class="fas fa-check"></i> Crisis Response Training</span>
+                                <span><i class="fas fa-check"></i> Counter-Terror Operations</span>
+                                <span><i class="fas fa-check"></i> Executive Protection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-tactical">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">TESTIMONIALS</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <p class="quote">"I just wanted to send you this email and let you know I truly believe your training saved my life. I was involved in a shooting during work two days ago where I had to shoot and kill a man that pulled a gun on me. I truly believe your CQB training made it to where I was able to go home to my family and I thank you sir."</p>
+                            <p class="author">— Adam (Patrolman)</p>
+                            <div class="testimonial-badge">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Law Enforcement</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="quote">"The Advanced Concealed Carry course was a game-changer. The instructors' real-world experience and attention to detail helped me develop a much deeper understanding of personal defense. The scenario-based training was incredibly valuable."</p>
+                            <p class="author">— Sarah M. (Civilian)</p>
+                            <div class="testimonial-badge">
+                                <i class="fas fa-user-shield"></i>
+                                <span>Civilian Defense</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="quote">"As a military contractor, I've trained at facilities worldwide. Sawmill's tactical training complex and instructor cadre are world-class. The urban training village and shoot house scenarios are as realistic as it gets."</p>
+                            <p class="author">— Mike R. (Military Contractor)</p>
+                            <div class="testimonial-badge">
+                                <i class="fas fa-medal"></i>
+                                <span>Military Professional</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="quote">"Our entire SWAT team completed the Advanced CQB course. The instructors' expertise in tactical team operations and their ability to create challenging, realistic scenarios significantly improved our unit's capabilities."</p>
+                            <p class="author">— Lt. James K. (SWAT Team Leader)</p>
+                            <div class="testimonial-badge">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Law Enforcement</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <p class="quote">"The Basic Rifle course exceeded all expectations. As someone new to firearms, the instructors' patient, methodical approach helped me build a solid foundation. I've since completed three more courses here."</p>
+                            <p class="author">— David L. (Civilian)</p>
+                            <div class="testimonial-badge">
+                                <i class="fas fa-user-shield"></i>
+                                <span>Civilian Defense</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4"></button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Divider 3 -->
+    <div class="parallax-divider parallax-3">
+        <div class="parallax-content">
+            <h2>STATE-OF-THE-ART FACILITIES</h2>
+            <p>Train in realistic, purpose-built environments</p>
+        </div>
+    </div>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">STATE-OF-THE-ART FACILITIES</h2>
+            
+            <!-- Facility Overview -->
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="facility-overview">
+                        <h3>TRAINING COMPLEX FEATURES</h3>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> 50-Acre Training Complex</li>
+                            <li><i class="fas fa-check-circle"></i> Multiple Indoor & Outdoor Ranges</li>
+                            <li><i class="fas fa-check-circle"></i> Urban Training Village</li>
+                            <li><i class="fas fa-check-circle"></i> Shoot House with Video Analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Low-Light Training Facilities</li>
+                            <li><i class="fas fa-check-circle"></i> Vehicle Training Area</li>
+                            <li><i class="fas fa-check-circle"></i> Climate-Controlled Classrooms</li>
+                            <li><i class="fas fa-check-circle"></i> Pro Shop & Equipment Rental</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="facility-specs">
+                        <h3>RANGE SPECIFICATIONS</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <h4>Indoor Range</h4>
+                                <ul>
+                                    <li>20 Lanes</li>
+                                    <li>25 Yard Distance</li>
+                                    <li>Climate Controlled</li>
+                                    <li>Advanced Target Systems</li>
+                                </ul>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Outdoor Range</h4>
+                                <ul>
+                                    <li>30 Lanes</li>
+                                    <li>Up to 1000 Yards</li>
+                                    <li>Multiple Firing Positions</li>
+                                    <li>Moving Targets</li>
+                                </ul>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Tactical Village</h4>
+                                <ul>
+                                    <li>20,000 sq ft</li>
+                                    <li>Modular Layouts</li>
+                                    <li>Force-on-Force Areas</li>
+                                    <li>Scenario-Based Training</li>
+                                </ul>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Shoot House</h4>
+                                <ul>
+                                    <li>360° Live-Fire</li>
+                                    <li>Video Monitoring</li>
+                                    <li>Multiple Configurations</li>
+                                    <li>Night Vision Compatible</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facility Gallery -->
+            <div class="facility-gallery">
+                <h3 class="text-center mb-4">FACILITY GALLERY</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Indoor Range">
+                            <div class="gallery-overlay">
+                                <h4>Indoor Range</h4>
+                                <p>State-of-the-art 20-lane indoor shooting facility</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Outdoor Range">
+                            <div class="gallery-overlay">
+                                <h4>Outdoor Range</h4>
+                                <p>Long-distance shooting up to 1000 yards</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Tactical Village">
+                            <div class="gallery-overlay">
+                                <h4>Tactical Village</h4>
+                                <p>Urban combat and scenario training facility</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Shoot House">
+                            <div class="gallery-overlay">
+                                <h4>Shoot House</h4>
+                                <p>360° live-fire training environment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Classroom">
+                            <div class="gallery-overlay">
+                                <h4>Modern Classrooms</h4>
+                                <p>Climate-controlled learning environment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f" alt="Pro Shop">
+                            <div class="gallery-overlay">
+                                <h4>Pro Shop</h4>
+                                <p>Full-service equipment and retail store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>CONTACT US</h3>
+                    <p>The Sawmill Tactical Training Facility<br>
+                    8524 Neely Ferry Road<br>
+                    Laurens, SC 29360</p>
+                    <p>Phone: (864) 677-5862<br>
+                    Email: contact@sawmillttc.com</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#training">Training Schedule</a></li>
+                        <li><a href="#members">Membership</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registrationModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Course Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="registration-steps">
+                        <!-- Prerequisites Section -->
+                        <div class="reg-section">
+                            <h3><i class="fas fa-clipboard-list"></i> Prerequisites</h3>
+                            <ul class="prerequisites-list">
+                                <li><i class="fas fa-check"></i> Valid Government ID</li>
+                                <li><i class="fas fa-check"></i> No Felony Convictions</li>
+                                <li><i class="fas fa-check"></i> Signed Liability Waiver</li>
+                                <li><i class="fas fa-check"></i> Basic Firearms Knowledge (for Advanced Courses)</li>
+                                <li><i class="fas fa-check"></i> Physical Fitness Requirements (Course Specific)</li>
+                            </ul>
+                        </div>
+                        <!-- Equipment Requirements -->
+                        <div class="reg-section">
+                            <h3><i class="fas fa-tools"></i> Required Equipment</h3>
+                            <div id="courseEquipment">
+                                <!-- Dynamically populated based on course -->
+                            </div>
+                            <p class="equipment-note">* Some equipment available for rental - inquire during registration</p>
+                        </div>
+                        <!-- Registration Form -->
+                        <div class="reg-section">
+                            <h3><i class="fas fa-user-plus"></i> Registration Details</h3>
+                            <form id="registrationForm" class="registration-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" class="form-control" placeholder="Phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <select class="form-select" required>
+                                            <option value="">Select Experience Level</option>
+                                            <option value="beginner">Beginner</option>
+                                            <option value="intermediate">Intermediate</option>
+                                            <option value="advanced">Advanced</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="3" placeholder="Additional Notes or Questions"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Complete Registration</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,1740 @@
+/* Global Styles */
+:root {
+    --tactical-red: #ff3b30;
+    --tactical-dark: #1a1a1a;
+    --tactical-gray: #333333;
+    --tactical-light: #f5f5f5;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--tactical-dark);
+    color: var(--tactical-light);
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    background: rgba(26, 26, 26, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 59, 48, 0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.brand-text {
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.8rem;
+    color: var(--tactical-red);
+}
+
+.brand-subtext {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+}
+
+.nav-link {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--tactical-red) !important;
+}
+
+.nav-link.btn-danger {
+    color: white !important;
+}
+
+.nav-link.btn-danger:hover {
+    color: white !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1595590424283-b8f17842773f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    padding-top: 80px;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 59, 48, 0.1) 50%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 1;
+    animation: overlayPulse 4s ease-in-out infinite;
+}
+
+.hero-section .overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff3b30' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+@keyframes overlayPulse {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                 0 0 20px rgba(255, 59, 48, 0.2),
+                 0 0 40px rgba(255, 59, 48, 0.1);
+    animation: textGlow 4s ease-in-out infinite;
+    position: relative;
+}
+
+.hero-section h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 100px;
+    height: 2px;
+    background: var(--tactical-red);
+    transform: translateX(-50%);
+    animation: underlineWidth 4s ease-in-out infinite;
+}
+
+.hero-section .lead {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.5s;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                     0 0 20px rgba(255, 59, 48, 0.2),
+                     0 0 40px rgba(255, 59, 48, 0.1);
+    }
+    50% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                     0 0 30px rgba(255, 59, 48, 0.3),
+                     0 0 60px rgba(255, 59, 48, 0.2);
+    }
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                     0 0 20px rgba(255, 59, 48, 0.2),
+                     0 0 40px rgba(255, 59, 48, 0.1);
+    }
+}
+
+@keyframes underlineWidth {
+    0% {
+        width: 100px;
+        opacity: 0.5;
+    }
+    50% {
+        width: 150px;
+        opacity: 1;
+    }
+    100% {
+        width: 100px;
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Parallax Dividers */
+.parallax-divider {
+    position: relative;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Only apply fixed background on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .parallax-divider {
+        background-attachment: fixed;
+    }
+}
+
+.parallax-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.parallax-1 {
+    background-image: url('https://images.unsplash.com/photo-1595590424283-b8f17842773f');
+}
+
+.parallax-2 {
+    background-image: url('https://images.unsplash.com/photo-1595590424283-b8f17842773f');
+}
+
+.parallax-3 {
+    background-image: url('https://images.unsplash.com/photo-1595590424283-b8f17842773f');
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--tactical-light);
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.parallax-content h2 {
+    font-family: 'Black Ops One', cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .parallax-divider {
+        height: 300px;
+        background-position: center center;
+    }
+    
+    .parallax-content {
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    .parallax-content h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    
+    .parallax-content p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        padding: 0 1rem;
+    }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+    .parallax-divider {
+        height: 250px;
+    }
+    
+    .parallax-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .parallax-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Prevent text from getting too small on very small devices */
+@media (max-width: 320px) {
+    .parallax-divider {
+        height: 200px;
+    }
+    
+    .parallax-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .parallax-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Section Styles */
+.section-title {
+    font-family: 'Black Ops One', cursive;
+    color: var(--tactical-red);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.bg-tactical {
+    background-color: var(--tactical-gray);
+}
+
+/* Training Events Header */
+.training-events-header {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    transition: all 0.3s ease;
+}
+
+.training-events-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.training-events-header:hover {
+    transform: translateY(-5px);
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.training-events-header:hover img {
+    transform: scale(1.05);
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+.header-overlay .section-title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .header-overlay .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-overlay .section-title {
+        font-size: 1.5rem;
+    }
+    .training-events-header img {
+        height: 200px;
+    }
+}
+
+/* Section Dividers */
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--tactical-red), transparent);
+    margin: 2rem 0;
+    opacity: 0.5;
+}
+
+/* Calendar Styles */
+.month-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.month-navigation .btn {
+    min-width: 150px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.month-navigation .btn.active {
+    background-color: var(--tactical-red);
+    border-color: var(--tactical-red);
+    color: white;
+}
+
+/* Timeline Events */
+.timeline-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-event {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-radius: 8px;
+    display: flex;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    min-height: 200px;
+    position: relative;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 59, 48, 0.2),
+                    0 0 10px rgba(255, 59, 48, 0.2),
+                    0 0 15px rgba(255, 59, 48, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 59, 48, 0.3),
+                    0 0 20px rgba(255, 59, 48, 0.3),
+                    0 0 30px rgba(255, 59, 48, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 59, 48, 0.2),
+                    0 0 10px rgba(255, 59, 48, 0.2),
+                    0 0 15px rgba(255, 59, 48, 0.2);
+    }
+}
+
+.event-image {
+    width: 250px;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-right: 1px solid rgba(255, 59, 48, 0.2);
+    background: rgba(26, 26, 26, 0.5);
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.timeline-event:hover .event-image img {
+    transform: scale(1.1);
+}
+
+.timeline-event:hover {
+    transform: translateY(-5px);
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.timeline-event.featured {
+    border: 2px solid var(--tactical-red);
+    background: rgba(26, 26, 26, 0.95);
+}
+
+.timeline-event.featured:hover {
+    animation: glowPulse 1.5s infinite;
+    box-shadow: 0 0 15px rgba(255, 59, 48, 0.3),
+                0 0 30px rgba(255, 59, 48, 0.2),
+                0 0 45px rgba(255, 59, 48, 0.1);
+}
+
+.event-date {
+    background: rgba(255, 59, 48, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.event-date .day {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--tactical-red);
+    line-height: 1;
+}
+
+.event-date .month {
+    font-size: 1.2rem;
+    color: var(--tactical-light);
+    font-weight: 700;
+}
+
+.event-date .badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: var(--tactical-red);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+.event-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.event-content h3 {
+    color: var(--tactical-red);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.event-details {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.event-details span {
+    color: var(--tactical-light);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.event-details i {
+    color: var(--tactical-red);
+    margin-right: 0.5rem;
+}
+
+/* Open Range Schedule */
+.open-range-schedule {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.open-range-schedule h3 {
+    color: var(--tactical-red);
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.open-range-schedule h3 .left-section {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.open-range-schedule h3 .title {
+    display: inline-block;
+}
+
+.open-range-schedule h3 .month-year {
+    color: var(--tactical-light);
+    font-size: 0.9em;
+    margin: 0;
+    padding-right: 1rem;
+    opacity: 0.8;
+}
+
+.month-calendar {
+    margin-bottom: 1.5rem;
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: 700;
+    color: var(--tactical-red);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    width: 100%;
+}
+
+.calendar-grid div {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    cursor: default;
+    min-width: 35px;
+    min-height: 35px;
+    padding: 0.5rem;
+}
+
+.calendar-grid div.available {
+    background: rgba(40, 167, 69, 0.1);
+    color: #2ecc71;
+    border: 1px solid rgba(40, 167, 69, 0.3);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.calendar-grid div.unavailable {
+    background: rgba(255, 59, 48, 0.3);
+    color: var(--tactical-red);
+    border: 1px solid var(--tactical-red);
+    position: relative;
+    font-weight: 700;
+}
+
+.calendar-grid div.unavailable:hover {
+    background: rgba(255, 59, 48, 0.4);
+}
+
+.calendar-grid div.unavailable::after {
+    content: 'UNAVAILABLE';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    opacity: 0.8;
+    color: var(--tactical-red);
+}
+
+
+
+.calendar-grid div.prev-month,
+.calendar-grid div.next-month {
+    opacity: 0.3;
+    font-size: 0.8rem;
+}
+
+.calendar-grid div.available {
+    background: rgba(40, 167, 69, 0.1);
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.calendar-grid div.available:hover {
+    background: rgba(40, 167, 69, 0.2);
+}
+
+.calendar-grid div.available::after {
+    content: 'AVAILABLE';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem;
+    opacity: 0.8;
+    color: #2ecc71;
+}
+
+.range-legend {
+    display: flex;
+    gap: 2rem;
+}
+
+.range-legend span {
+    color: var(--tactical-light);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.range-legend i.available {
+    color: #2ecc71;
+}
+
+.range-legend i.unavailable {
+    color: var(--tactical-red);
+}
+
+.range-legend i.closed {
+    color: #ff5252;
+    opacity: 0.7;
+}
+
+/* Tooltip Styles */
+.range-tooltip {
+    position: fixed;
+    background: rgba(26, 26, 26, 0.95);
+    color: var(--tactical-light);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    pointer-events: none;
+    z-index: 1000;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .timeline-event {
+        flex-direction: column;
+    }
+    
+    .event-image {
+        width: 100%;
+        height: 200px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 59, 48, 0.2);
+    }
+    
+    .event-date {
+        padding: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        min-width: auto;
+    }
+    
+    .event-date .day {
+        font-size: 2rem;
+    }
+    
+    .event-date .month {
+        font-size: 1rem;
+    }
+    
+    .event-details {
+        gap: 1rem;
+    }
+    
+    .calendar-header {
+        font-size: 0.8rem;
+    }
+
+    .calendar-grid div {
+        font-size: 0.8rem;
+        padding: 0.25rem;
+    }
+
+    .calendar-grid div.available::after,
+    .calendar-grid div.unavailable::after {
+        display: none;
+    }
+
+    .open-range-schedule {
+        padding: 1rem;
+    }
+
+    .open-range-schedule h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 0;
+    }
+
+    .open-range-schedule h3 .left-section {
+        position: static;
+        transform: none;
+    }
+
+    .open-range-schedule h3 .title {
+        margin-right: 1rem;
+    }
+
+    .range-legend {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .month-navigation .btn {
+        min-width: 120px;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .event-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .range-legend {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .calendar-grid div {
+        min-width: 30px;
+        min-height: 30px;
+        font-size: 0.75rem;
+        padding: 0.15rem;
+    }
+
+    .calendar-header {
+        font-size: 0.75rem;
+    }
+
+    .open-range-schedule h3 {
+        font-size: 1.1rem;
+    }
+
+    .calendar-grid div.prev-month,
+    .calendar-grid div.next-month {
+        font-size: 0.7rem;
+    }
+}
+
+/* Training Path Cards */
+.path-card {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.path-card:hover {
+    transform: translateY(-5px);
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.path-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.path-header i {
+    color: var(--tactical-red);
+    margin-bottom: 1rem;
+}
+
+.path-header h3 {
+    color: var(--tactical-light);
+    font-weight: 700;
+    margin: 0;
+}
+
+.level {
+    margin-bottom: 1.5rem;
+}
+
+.level h4 {
+    color: var(--tactical-red);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.level ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.level ul li {
+    color: var(--tactical-light);
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.level ul li:before {
+    content: "→";
+    color: var(--tactical-red);
+    position: absolute;
+    left: 0;
+}
+
+/* Course Cards */
+.course-card {
+    background: var(--tactical-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.course-image {
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    z-index: 1;
+}
+
+.course-image .badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.course-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-overlay span {
+    color: var(--tactical-light);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: rgba(26, 26, 26, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.course-content {
+    padding: 2rem;
+}
+
+.equipment-list {
+    background: rgba(26, 26, 26, 0.5);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.equipment-list h4 {
+    color: var(--tactical-red);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.equipment-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.equipment-list ul li {
+    color: var(--tactical-light);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.equipment-list ul li i {
+    color: var(--tactical-red);
+    margin-right: 0.75rem;
+    font-size: 0.8rem;
+}
+
+.equipment-note {
+    color: var(--tactical-red);
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.price {
+    color: var(--tactical-red);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Instructor Cards */
+.instructor-card {
+    background: var(--tactical-gray);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.instructor-card:hover {
+    transform: translateY(-5px);
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.instructor-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.instructor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instructor-card:hover .instructor-image img {
+    transform: scale(1.05);
+}
+
+.instructor-content {
+    padding: 2rem;
+}
+
+.instructor-content h3 {
+    color: var(--tactical-red);
+    margin-bottom: 0.5rem;
+}
+
+.designation {
+    font-size: 1.1rem;
+    color: var(--tactical-light);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.credentials {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.credentials li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--tactical-light);
+}
+
+.credentials li:before {
+    content: "•";
+    color: var(--tactical-red);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.certifications .badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+/* Certification Styles */
+.cert-group {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.cert-group:hover {
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.cert-group h3 {
+    color: var(--tactical-red);
+    font-family: 'Black Ops One', cursive;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.cert-group h3 i {
+    margin-right: 1rem;
+}
+
+.cert-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.cert-icon {
+    background: rgba(255, 59, 48, 0.1);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cert-icon i {
+    color: var(--tactical-red);
+    font-size: 1.2rem;
+}
+
+.cert-content h4 {
+    color: var(--tactical-light);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.cert-content p {
+    color: var(--tactical-light);
+    opacity: 0.8;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.credentials-banner {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.credentials-banner:hover {
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.credentials-content h3 {
+    color: var(--tactical-red);
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.credentials-grid span {
+    color: var(--tactical-light);
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.credentials-grid span i {
+    color: var(--tactical-red);
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cert-grid {
+        gap: 1.5rem;
+    }
+    
+    .cert-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-radius: 8px;
+    padding: 3rem;
+    margin: 0 auto;
+    max-width: 800px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: var(--tactical-red);
+    background: rgba(26, 26, 26, 0.95);
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.author {
+    color: var(--tactical-red);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.testimonial-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 59, 48, 0.1);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.testimonial-badge i {
+    color: var(--tactical-red);
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.testimonial-badge span {
+    color: var(--tactical-light);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.carousel-indicators {
+    bottom: -3rem;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: var(--tactical-red) !important;
+    opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+}
+
+/* Facility Styles */
+.facility-overview h3,
+.facility-specs h3,
+.facility-gallery h3 {
+    color: var(--tactical-red);
+    font-family: 'Black Ops One', cursive;
+    margin-bottom: 2rem;
+}
+
+.facility-features {
+    list-style: none;
+    padding: 0;
+}
+
+.facility-features li {
+    color: var(--tactical-light);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.facility-features li i {
+    color: var(--tactical-red);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.spec-item {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.spec-item:hover {
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+}
+
+.spec-item h4 {
+    color: var(--tactical-red);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.spec-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.spec-item ul li {
+    color: var(--tactical-light);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    transition: all 0.3s ease;
+}
+
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 59, 48, 0.1),
+        transparent
+    );
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(26, 26, 26, 0.95);
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    border-top: 1px solid rgba(255, 59, 48, 0.2);
+    z-index: 2;
+}
+
+.gallery-item:hover {
+    animation: glowPulse 2s infinite;
+    border-color: var(--tactical-red);
+    transform: translateY(-5px);
+}
+
+.gallery-item:hover::before {
+    opacity: 1;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+    background: rgba(26, 26, 26, 0.98);
+}
+
+.gallery-overlay h4 {
+    color: var(--tactical-red);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.gallery-overlay p {
+    color: var(--tactical-light);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-overlay {
+        transform: translateY(0);
+        background: rgba(26, 26, 26, 0.8);
+    }
+}
+
+/* Registration Modal */
+.modal-content {
+    background: var(--tactical-dark);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 59, 48, 0.2);
+    padding: 1.5rem;
+}
+
+.modal-header .modal-title {
+    color: var(--tactical-red);
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.5rem;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.reg-section {
+    margin-bottom: 2.5rem;
+}
+
+.reg-section:last-child {
+    margin-bottom: 0;
+}
+
+.reg-section h3 {
+    color: var(--tactical-red);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.reg-section h3 i {
+    margin-right: 1rem;
+}
+
+.prerequisites-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.prerequisites-list li {
+    color: var(--tactical-light);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.prerequisites-list li i {
+    color: var(--tactical-red);
+    margin-right: 1rem;
+}
+
+.registration-form .form-control,
+.registration-form .form-select {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    color: var(--tactical-light);
+    padding: 0.75rem 1rem;
+}
+
+.registration-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.registration-form .form-control:focus,
+.registration-form .form-select:focus {
+    background: rgba(26, 26, 26, 0.9);
+    border-color: var(--tactical-red);
+    box-shadow: 0 0 0 0.25rem rgba(255, 59, 48, 0.25);
+    color: var(--tactical-light);
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 59, 48, 0.2);
+    padding: 1.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--tactical-dark) !important;
+    border-top: 1px solid rgba(255, 59, 48, 0.1);
+}
+
+.footer h3 {
+    font-family: 'Black Ops One', cursive;
+    color: var(--tactical-red);
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    color: var(--tactical-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--tactical-red);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+/* Buttons */
+@keyframes buttonGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 59, 48, 0.4),
+                    0 0 10px rgba(255, 59, 48, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 59, 48, 0.6),
+                    0 0 20px rgba(255, 59, 48, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 59, 48, 0.4),
+                    0 0 10px rgba(255, 59, 48, 0.2);
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 59, 48, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.btn:hover::after {
+    opacity: 1;
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+.hero-section .btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.hero-section .btn:first-child {
+    animation: fadeInLeft 1s ease-out forwards 1s;
+}
+
+.hero-section .btn:last-child {
+    animation: fadeInRight 1s ease-out forwards 1s;
+}
+
+.hero-section .btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--tactical-red), transparent, var(--tactical-red));
+    z-index: -1;
+    animation: borderRotate 4s linear infinite;
+    border-radius: 4px;
+}
+
+.btn-danger {
+    background-color: var(--tactical-red);
+    border-color: var(--tactical-red);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-danger:hover {
+    background-color: #cc2f26;
+    border-color: #cc2f26;
+    animation: buttonGlow 2s infinite;
+    transform: translateY(-2px);
+}
+
+.btn-outline-danger {
+    color: var(--tactical-red);
+    border-color: var(--tactical-red);
+    background: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--tactical-red);
+    color: white;
+    animation: buttonGlow 2s infinite;
+    transform: translateY(-2px);
+}
+
+@keyframes borderRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .brand-text {
+        font-size: 1.4rem;
+    }
+    
+    .brand-subtext {
+        font-size: 0.7rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .course-card {
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-section .container {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--tactical-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tactical-red);
+    border-radius: 4px;
+}::-webkit-scrollbar-thumb:hover {
+    background: #cc2f26;
+}
+
+
