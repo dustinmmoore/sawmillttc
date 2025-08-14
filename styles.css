@@ -1606,30 +1606,11 @@ body {
 
 .hero-section .btn {
     position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    opacity: 0;
+    transition: transform 0.3s ease;
 }
 
-.hero-section .btn:first-child {
-    animation: fadeInLeft 1s ease-out forwards 1s;
-}
-
-.hero-section .btn:last-child {
-    animation: fadeInRight 1s ease-out forwards 1s;
-}
-
-.hero-section .btn::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, var(--tactical-red), transparent, var(--tactical-red));
-    z-index: -1;
-    animation: borderRotate 4s linear infinite;
-    border-radius: 4px;
+.hero-section .btn:hover {
+    transform: translateY(-2px);
 }
 
 .btn-danger {
@@ -1669,28 +1650,6 @@ body {
     }
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .brand-text {
@@ -1712,13 +1671,8 @@ body {
 }
 
 /* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 .hero-section .container {
-    animation: fadeIn 1s ease-out;
+    opacity: 1;
 }
 
 /* Custom Scrollbar */

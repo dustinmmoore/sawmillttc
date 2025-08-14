@@ -72,3 +72,11 @@ document.querySelectorAll('.calendar-grid div').forEach(day => {
         });
     }
 });
+
+// Scroll to Month Selection
+document.querySelectorAll('.scroll-to-months').forEach(button => {
+    button.addEventListener('click', () => {
+        const monthNav = document.querySelector('.month-navigation');
+        monthNav.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+});
