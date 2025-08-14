@@ -1,3 +1,14 @@
+// Back to Top Button
+const backToTop = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
+
 // Set current month on page load
 document.addEventListener('DOMContentLoaded', () => {
     const months = ['january', 'february', 'march', 'april', 'may', 'june', 
@@ -22,6 +33,42 @@ document.addEventListener('DOMContentLoaded', () => {
         currentSection.style.display = 'block';
         currentSection.classList.add('active');
     }
+
+    // Mobile Menu Navigation
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const menuToggle = document.querySelector('.navbar-toggler');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Only handle internal links
+            if (link.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                
+                // Get the target section
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    // Close the mobile menu
+                    if (navbarCollapse.classList.contains('show')) {
+                        menuToggle.click();
+                    }
+                    
+                    // Calculate header offset
+                    const headerOffset = 80; // Adjust this value based on your header height
+                    const elementPosition = targetSection.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    // Smooth scroll to section
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
 });
 
 // Month Navigation
